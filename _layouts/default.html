@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "zh" }}">
+
+  {% include head.html %}
+
+  <body>
+   <div class="page absolute-trbl">
+     <div class="page-bgr">     </div>
+     <div class="page-bgl">     </div>
+          {% include header.html %}
+
+          <main class="page-content" aria-label="Content">
+            <div class="page-bg-outer absolute-trbl">
+              <div class="page-bg absolute-trbl">
+                <div class="page-bg-inner absolute-trbl">
+                  <div class="content">
+                    {{ content }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+    </div>
+  </body>
+
+</html>

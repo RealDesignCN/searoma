@@ -1,0 +1,31 @@
+<header class="site-header" role="banner">
+
+  <div class="wrapper">
+    <nav class="site-nav">
+      <div class="trigger">
+        {% for my_page in site.pages %}
+          {% if my_page.lang == page.lang %}
+            {% if my_page.title == page.title %}
+              <a class="page-link page-link-active" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title | escape }}</a>
+            {% else %}
+              <a class="page-link"  href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title | escape }}</a>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </nav>
+
+    <div class="f-fl">
+      <a class="site-title" href="{{ site.baseurl }}/">
+        <img alt="{{ site.title | escape }}" src="{{ "/assets/images/logo.png" | prepend: site.baseurl }}" />
+      </a>
+    </div>
+
+    <div class="f-fr locales">
+      <a href="/" class="locale-zh">  </a>
+      <a href="/fr" class="locale-fr">   </a>
+      <a href="/en" class="locale-en">    </a>
+    </div>
+  </div>
+
+</header>

@@ -1,0 +1,257 @@
+/**
+ * Custom
+ */
+.absolute-trbl{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.absolute-rl{
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+
+.page{
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include media-query($on-bigger) {
+     background-image: url('/assets/images/bg1920.jpg');
+  }
+  @include media-query($on-big) {
+     background-image: url('/assets/images/bg1440.jpg');
+  }
+  @include media-query($on-pc) {
+     background-image: url('/assets/images/bg1024.jpg');
+  }
+}
+
+
+.site-header{
+  height: 214px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.site-header .wrapper{
+  padding-top: 18px;
+
+}
+.page-content{
+  position: absolute;
+  top: 214px;
+  bottom: 0;
+  left:0;
+  right:0;
+  color: gray;
+  padding: 0;
+}
+
+.site-header{
+
+  @include media-query($on-bigger) {
+      height: 248px;
+  }
+  @include media-query($on-big) {
+    height: 190px;
+  }
+  @include media-query($on-pc) {
+    height: 160px;
+  }
+}
+.page-content{
+  @include media-query($on-bigger) {
+    top: 248px;
+  }
+  @include media-query($on-big) {
+    top: 190px;
+  }
+  @include media-query($on-pc) {
+    top: 160px;
+  }
+}
+
+
+
+.page-bg-outer {
+  background-position: top center ;
+  background-repeat: no-repeat;
+  background-image: url('/assets/images/box-t.png');
+}
+.page-bg{
+  bottom: 60px;
+  background-position: bottom center ;
+  background-repeat: no-repeat;
+  background-image: url('/assets/images/box-b.png');
+}
+.page-bg-inner{
+  top: 72px;
+  bottom: 65px;
+  background-position: center center;
+  background-repeat: repeat-y;
+  background-image: url('/assets/images/box-m.png');
+}
+
+.site-footer{
+  background-color: lightgreen;
+  position: absolute;
+  height: 80px;
+  bottom: 0;
+  left:0;
+  right:0;
+}
+
+.site-nav {
+  padding: 0 0 0 5px;
+  background-image: url('/assets/images/nav.png');
+  background-position: top left;
+  background-repeat: no-repeat;
+  line-height: 50px;
+}
+.site-nav .page-link{
+  color: #00C3DC;
+  font-size: 16px;
+  text-decoration: none;
+  letter-spacing: 6px;
+  display: inline-block;
+  width: 130px;
+  text-align: center;
+  padding: 12px 0 18px 0;
+}
+.site-nav .page-link.page-link-active{
+  color: #ffffff;
+}
+.site-nav .page-link:hover{
+  color: #ffffff;
+  background-image:  url('/assets/images/nav-hl.png');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+
+
+.post{
+
+  padding: 2px 56px 12px 56px;
+  color: #ffffff;
+  line-height: 1.6em;
+  letter-spacing: normal;
+}
+.post-title{
+  color: #ffffff;
+  line-height: 30px;
+  font-size: 22px;
+  padding:  6px 0 6px 38px;
+  background-image:  url('/assets/images/title-bg.png');
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+
+/*
+ *  style scrollbar
+ *  https://webkit.org/blog/363/styling-scrollbars/
+ *  http://www.blueidea.com/tech/web/2011/8383.asp
+*/
+/* ie scrollbar */
+.post{
+  scrollbar-arrow-color: #0F3383;     /*三角箭头的颜色*/
+  scrollbar-face-color: #0F3383;      /*立体滚动条的颜色（包括箭头部分的背景色）*/
+  scrollbar-3dlight-color: #0F3383;   /*立体滚动条亮边的颜色*/
+  scrollbar-highlight-color: #0F3383; /*滚动条的高亮颜色（左阴影？）*/
+  scrollbar-shadow-color: #0F3383;    /*立体滚动条阴影的颜色*/
+  scrollbar-darkshadow-color: #0F3383; /*立体滚动条外阴影的颜色*/
+  scrollbar-track-color: #0F3383;     /*立体滚动条背景颜色*/
+  scrollbar-base-color:#0F3383;       /*滚动条的基色*/
+}
+
+/*
+ *  webkit scrollbar
+ */
+.content::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	/*background-color: #F5F5F5;*/
+	border-radius: 10px;
+}
+
+.content::-webkit-scrollbar
+{
+	width: 8px;
+	/*background-color: #F5F5F5;*/
+}
+
+.content::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+  background-color: #F5F5F5;
+
+  /*background-image: -webkit-gradient(linear,
+									   left bottom,
+									   left top,
+									   color-stop(0.44, rgb(122,153,217)),
+									   color-stop(0.72, rgb(73,125,189)),
+									   color-stop(0.86, rgb(28,58,148)));
+                     */
+}
+.content::-webkit-scrollbar-track-piece
+{
+  border-radius: 10px;
+  background-color: blue;
+}
+
+.locales {
+padding: 12px;
+
+}
+.locales a{
+  background-image:  url('/assets/images/flags.png');
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 36px;
+  padding: 12px 0;
+}
+.locale-zh{
+  background-position: 0px 0px;
+}
+.locale-fr{
+  background-position: -38px 0;
+}
+.locale-en{
+  background-position: -76px 0;
+}
+
+.content{
+  position: absolute;
+  width: 788px;
+  left:50%;
+  margin-left: -394px;
+  margin-right: auto;
+  top: 0;
+  bottom: 0;
+  overflow: auto;
+}
+
+.nutrition{
+  position: relative;
+  background-image:  url('/assets/images/nutrition.png');
+  background-repeat: no-repeat;
+  height: 600px;
+}
+.nutrition1{
+  position: absolute;
+  top: 68px;
+  left: 214px;
+}
+.nutrition2{
+  position: absolute;
+  top: 268px;
+  left: 384px ;
+}
+.nutrition3{
+  position: absolute;
+  top: 484px;
+  left: 48px ;
+}
