@@ -7,6 +7,13 @@
   right: 0;
   bottom: 0;
   left: 0;
+    @include media-query($on-laptop) {
+       position: relative;
+       top: auto;
+       right: auto;
+       left: auto;
+       bottom: auto;
+    }
 }
 .absolute-rl{
   position: absolute;
@@ -26,6 +33,14 @@
   }
   @include media-query($on-pc) {
      background-image: url('/assets/images/bg1024.jpg');
+  }
+  @include media-query($on-laptop) {
+    position: relative;
+    top:auto;
+    left:auto;
+    right: auto;
+    bottom: auto;
+    background-attachment:fixed;
   }
 }
 
@@ -48,6 +63,13 @@
   right:0;
   color: gray;
   padding: 0;
+  @include media-query($on-laptop) {
+    position: relative;
+    top:auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+  }
 }
 
 .site-header{
@@ -61,6 +83,10 @@
   @include media-query($on-pc) {
     height: 160px;
   }
+
+  @include media-query($on-laptop) {
+
+  }
 }
 .page-content{
   @include media-query($on-bigger) {
@@ -72,6 +98,9 @@
   @include media-query($on-pc) {
     top: 160px;
   }
+    @include media-query($on-laptop) {
+      top:auto;
+    }
 }
 
 
@@ -96,42 +125,37 @@
 }
 
 .site-footer{
-  background-color: lightgreen;
-  position: absolute;
-  height: 80px;
-  bottom: 0;
-  left:0;
-  right:0;
-}
 
-.site-nav {
-  padding: 0 0 0 5px;
-  background-image: url('/assets/images/nav.png');
-  background-position: top left;
-  background-repeat: no-repeat;
-  line-height: 50px;
 }
-.site-nav .page-link{
-  color: #00C3DC;
-  font-size: 16px;
-  text-decoration: none;
-  letter-spacing: 6px;
-  display: inline-block;
-  width: 130px;
-  text-align: center;
-  padding: 12px 0 18px 0;
-}
-.site-nav .page-link.page-link-active{
-  color: #ffffff;
-}
-.site-nav .page-link:hover{
-  color: #ffffff;
-  background-image:  url('/assets/images/nav-hl.png');
-  background-repeat: no-repeat;
-  background-position: bottom center;
-}
+@media screen and (min-width: $on-pc) {
+  .site-nav {
+    padding: 0 0 0 5px;
+    background-image: url('/assets/images/nav.png');
+    background-position: top left;
+    background-repeat: no-repeat;
+    line-height: 50px;
+  }
+  .site-nav .page-link{
+    color: #00C3DC;
+    font-size: 16px;
+    text-decoration: none;
+    letter-spacing: 6px;
+    display: inline-block;
+    width: 130px;
+    text-align: center;
+    padding: 12px 0 18px 0;
+  }
+  .site-nav .page-link.page-link-active{
+    color: #ffffff;
+  }
+  .site-nav .page-link:hover{
+    color: #ffffff;
+    background-image:  url('/assets/images/nav-hl.png');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+  }
 
-
+}
 
 .post{
 
@@ -232,6 +256,13 @@ padding: 12px;
   top: 0;
   bottom: 0;
   overflow: auto;
+  @include media-query($on-laptop) {
+    position: relative;
+    left: 0;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .nutrition{
@@ -268,7 +299,7 @@ padding: 12px;
   padding: 0 0 0 36px;
 }
 .product-img{
-  height: 184px;  
+  height: 184px;
 }
 
 body.en{
