@@ -267,3 +267,43 @@ padding: 12px;
   float: left;
   padding: 0 0 0 36px;
 }
+.product-img{
+  height: 184px;  
+}
+
+body.en{
+  .site-nav{
+      line-height: 46px;
+  }
+  .site-nav .page-link{
+    letter-spacing: normal;
+    font-size: 14px;
+    padding: 12px 0 21px 0;
+
+  }
+  .product p{
+    margin:  0 12px 8px 0;
+
+  }
+  .product-desc{
+    padding: 0 0 0 6px;
+  }
+}
+body.fr{
+  .site-nav{
+      line-height: 46px;
+  }
+  .site-nav .page-link{
+    letter-spacing: normal;
+    font-size: 14px;
+    padding: 12px 0 21px 0;
+
+  }
+  .product p{
+    margin:  0 12px 8px 0;
+
+  }
+  .product-desc{
+    padding: 0 0 0 6px;
+  }
+}
