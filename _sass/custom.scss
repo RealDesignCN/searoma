@@ -103,31 +103,30 @@
     }
 }
 
-
-
-.page-bg-outer {
-  background-position: top center ;
-  background-repeat: no-repeat;
-  background-image: url('/assets/images/box-t.png');
-}
-.page-bg{
-  bottom: 60px;
-  background-position: bottom center ;
-  background-repeat: no-repeat;
-  background-image: url('/assets/images/box-b.png');
-}
-.page-bg-inner{
-  top: 72px;
-  bottom: 65px;
-  background-position: center center;
-  background-repeat: repeat-y;
-  background-image: url('/assets/images/box-m.png');
-}
-
 .site-footer{
 
 }
 @media screen and (min-width: $on-pc) {
+
+  .page-bg-outer {
+    background-position: top center ;
+    background-repeat: no-repeat;
+    background-image: url('/assets/images/box-t.png');
+  }
+  .page-bg{
+    bottom: 60px;
+    background-position: bottom center ;
+    background-repeat: no-repeat;
+    background-image: url('/assets/images/box-b.png');
+  }
+  .page-bg-inner{
+    top: 72px;
+    bottom: 65px;
+    background-position: center center;
+    background-repeat: repeat-y;
+    background-image: url('/assets/images/box-m.png');
+  }
+
   .site-nav {
     padding: 0 0 0 5px;
     background-image: url('/assets/images/nav.png');
