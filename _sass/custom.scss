@@ -271,6 +271,7 @@ padding: 12px;
   background-repeat: no-repeat;
   height: 600px;
 }
+
 .nutrition1{
   position: absolute;
   top: 68px;
@@ -314,10 +315,16 @@ body.en{
   }
   .product p{
     margin:  0 12px 8px 0;
-
   }
   .product-desc{
     padding: 0 0 0 6px;
+  }
+  .nutrition{
+    background-image:  url('/assets/images/nutrition-en.png');
+  }
+
+  .post-title-l{
+    background-image:  url('/assets/images/title-bg-l.png');
   }
 }
 body.fr{
@@ -336,5 +343,11 @@ body.fr{
   }
   .product-desc{
     padding: 0 0 0 6px;
+  }
+  .nutrition{
+    background-image:  url('/assets/images/nutrition-fr.png');
+  }
+  .post-title-l{
+    background-image:  url('/assets/images/title-bg-l.png');
   }
 }
