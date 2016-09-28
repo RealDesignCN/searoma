@@ -53,6 +53,9 @@
 }
 .site-header .wrapper{
   padding-top: 18px;
+  @include media-query($on-palm) {
+      padding-top: 0;
+  }
 
 }
 .page-content{
@@ -226,7 +229,7 @@
 }
 
 .locales {
-padding: 12px;
+padding: 16px 12px 12px 0;
 
 }
 .locales a{
