@@ -381,6 +381,10 @@ body.fr{
       background-image: none;
    }
   .wrapper { padding: 0;}
+  .content {
+    top:auto;
+    bottom: auto;
+  }
   .site-nav-pc {
       /*line-height: 24px;*/
       /*margin: 0 2px 0 2px;
@@ -437,8 +441,9 @@ body.fr{
     box-sizing: border-box;
     padding: 12px 0 0 5px;
   }
-  .nutrition
+  .nutrition, body.fr .nutrition, body.en .nutrition
   {
+    height: auto;
     background-image:  none;
     .feature{
       position: relative;
