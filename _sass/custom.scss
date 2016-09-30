@@ -41,6 +41,7 @@
     right: auto;
     bottom: auto;
     background-attachment:fixed;
+    background-size: auto auto;
   }
 }
 
@@ -369,6 +370,15 @@ body.fr{
 @media screen and (max-width: $on-palm) {
    body{
      box-sizing: border-box;
+     background-position: top center;
+     background-repeat: no-repeat;
+     background-image: url('/assets/images/bg1024.jpg');
+     background-attachment:fixed;
+     background-size: auto auto;
+
+   }
+   .page{
+      background-image: none;
    }
   .wrapper { padding: 0;}
   .site-nav-pc {
