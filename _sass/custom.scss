@@ -173,7 +173,9 @@
   background-repeat: no-repeat;
   background-position: center left;
 }
-
+.post-content{
+  margin: 20px 0;
+}
 /*
  *  style scrollbar
  *  https://webkit.org/blog/363/styling-scrollbars/
@@ -425,6 +427,9 @@ body.fr{
     line-height: 1.4em;
     letter-spacing: normal;
   }
+  .post-content{
+    margin: 8px 0;
+  }
   .product
   {
     display: block;
@@ -432,13 +437,13 @@ body.fr{
   }
   .product-img
   {
-    width: 50%;
+    width: 42%;
     float: left;
     height: auto;
   }
   .product-desc
   {
-    width: 50%;
+    width: 58%;
     float: left;
     box-sizing: border-box;
     padding: 12px 0 0 5px;
